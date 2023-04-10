@@ -22,9 +22,12 @@ header {
 }
 
 .logo {
-    background-color: darkcyan;
-    width: 5vw;
-    height: 3vw;
+    background-image: url('../images/logo.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 2vw;
 }
 
 .HF-style ul {
