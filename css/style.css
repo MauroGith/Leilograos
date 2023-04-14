@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
 
 * {
     margin: 0;
@@ -8,9 +8,40 @@
     list-style: none;
 }
 
+.default-button {
+    background-color: #FCDB5A;
+}
+
+.default-button, .default-button2 {
+    border: max(2px, .1vw) solid #FCDB5A;
+    display: inline-block;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: max(12px, 1vw);
+    padding: max(10px, 1vw) max(20px, 2vw);
+    border-radius: max(15px, 2vw);
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.homepage-titles{
+    font-weight: 700;
+    font-size: max(25px, 3vw);
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.homepage-titles span {
+    font-weight: normal;
+}
+
 header {
     background-color: black;
-    padding: max(10px, 1vw);
 }
 
 .HF-style {
@@ -162,14 +193,7 @@ footer p {
 }
 
 .products-offered .text-content h2 {
-    font-size: max(25px, 3vw);
-    text-transform: uppercase;
-    color: #333333;
     margin-bottom: max(10px, 1vw);
-}
-
-.products-offered .text-content h2 span {
-    font-weight: lighter;
 }
 
 .products-offered .text-content p {
@@ -215,7 +239,7 @@ footer p {
 }
 
 .products-offered .select-product form {
-    width: max(600px, 40%);
+    max-width: max(600px, 40%);
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -239,4 +263,147 @@ footer p {
     padding: max(10px, .5vw);
     font-size: max(14px, .8vw);
     border-radius: max(3px, .3vw);
+}
+
+section.agro {
+    padding: 0 max(10px, 2%);
+}
+
+.agro .about-us {
+    margin: max(20px, 2vw) 0;
+    background-image: url('../images/agro.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+
+.agro .about-us .title-img {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us .title-img h2 {
+    margin-bottom: max(20px, 4vw);
+}
+
+.about-us .base-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max(100px, 20vw);
+    width: 25%;
+}
+
+.about-us .base-img .base {
+    background-color: white;
+    border: max(5px, .4vw) solid #FCDB5A;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+}
+
+.about-us .base-img img {
+    position: relative;
+    width: 100%;
+}
+
+.agro .about-us .text {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+
+.agro .about-us .text p {
+    font-size: max(14px, 1vw);
+    line-height: 1.8vw;
+}
+
+.agro .prices-box {
+    max-width: max(600px, 55%);
+    margin: 0 auto;
+}
+
+.agro .prices-box h2 {
+    text-align: center;
+    margin: max(10px, 1vw) 0;
+}
+
+.agro .prices-box .investing-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.agro .investing-box .box-single {
+    width: 48%;
+    margin: max(10px, 1vw) 0;
+}
+
+.agro .investing-box .box-single img{
+    width: 100%;
+}
+
+.agro .prices-box a {
+    margin: max(10px, 1vw) 0;
+}
+.agro .disclosure-box {
+    margin: max(10px, 1vw) 0;
+}
+.agro .disclosure-img {
+    max-width: max(600px, 40vw);
+    margin: max(15px, 1.5vw) auto;
+}
+
+.agro .disclosure-box img {
+    width: 100%;
+}
+
+section.how-its-work {
+    margin: max(20px, 3vw) 0;
+    padding: max(30px, 3%);
+    background-color: #FCDB5A;
+}
+
+.how-its-work h2 {
+    text-align: center;
+    margin-bottom: max(20px, 2vw);
+}
+
+.how-its-work img {
+    width: 100%;
+}
+
+section.come-with-us {
+    padding: 0 10px;
+    margin-bottom: max(20px, 4vw);
+    text-align: center;
+}
+
+section.come-with-us p {
+    margin-top: max(10px, 1vw);
+    color: gray;
+    font-size: max(15px, 1vw);
+}
+
+.come-with-us .chose-path {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chose-path .path-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: max(20px, 2vw);
+}
+
+.chose-path .path-box img {
+    width: max(80px, 5vw);
+    margin-bottom: max(15px, 1vw);
 }
