@@ -320,7 +320,7 @@ section.agro {
 
 .agro .about-us .text p {
     font-size: max(14px, 1vw);
-    line-height: 1.8vw;
+    line-height: 1.8;
 }
 
 .agro .prices-box {
@@ -378,6 +378,50 @@ section.how-its-work {
     width: 100%;
 }
 
+.how-its-work .workflow {
+    display: none;
+    position: relative;
+    text-align: center;
+    max-width: max(600px, 50%);
+    margin: 0 auto;
+}
+
+.how-its-work .workflow .work-box {
+    padding: 0 10%;
+}
+
+.how-its-work .workflow span {
+    font-size: max(14px, .8vw);
+    background-color: white;
+    height: max(32px, .4vw);
+    width: max(32px, .4vw);
+    border-radius: 50%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-its-work .workflow p {
+    font-size: max(14px, .8vw);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.workflow .arrows{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.workflow .arrows i{
+    color: white;
+    cursor: pointer;
+    font-size: max(20px, 1.5vw);
+}
+
 section.come-with-us {
     padding: 0 10px;
     margin-bottom: max(20px, 4vw);
@@ -406,4 +450,14 @@ section.come-with-us p {
 .chose-path .path-box img {
     width: max(80px, 5vw);
     margin-bottom: max(15px, 1vw);
+}
+
+@media screen and (max-width: 768px){
+
+    .how-its-work img{
+        display: none;
+    }
+    .how-its-work .workflow {
+        display: block;
+    }
 }
