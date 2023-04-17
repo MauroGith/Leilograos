@@ -58,8 +58,8 @@ header {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 25%;
-    height: 2vw;
+    width: max(180px, 25%);
+    height: max(70px, 2vw);
 }
 
 .HF-style ul {
@@ -76,15 +76,17 @@ header {
     padding: 0 max(10px, 1vw);
 }
 
-.header-content .enter {
-    background-color: #FCDB5A;
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: lighter;
-    font-size: max(15px, 1vw);
-    padding: max(10px, 1vw) max(20px, 2.5vw);
-    border-radius: max(15px, 2vw);
+.header-options {
+    display: flex;
+    align-items: center;
+}
+
+.header-options .open-menu {
+    display: none;
+    color: white;
+    font-size: max(25px, 1.5vw);
+    padding: 0 max(15px, 1vw);
+    cursor: pointer;
 }
 
 main{
@@ -208,7 +210,7 @@ footer p {
 }
 
 .products-offered .images-content {
-    padding: 10px;
+    padding: 10px 20px;
     margin: max(20px, 2vw) 0;
     width: 100%;
     max-width: max(500px, 30%);
@@ -276,6 +278,7 @@ section.agro {
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -436,6 +439,7 @@ section.come-with-us p {
 
 .come-with-us .chose-path {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -454,10 +458,116 @@ section.come-with-us p {
 
 @media screen and (max-width: 768px){
 
+    .header-menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        padding: 10px 0;
+        border-top: 2px solid #FCDB5A;
+        background-color: black;
+        left: 0;
+        top: 90px;
+        z-index: 1;
+        text-align: center;
+    }
+
+    header .HF-style ul { 
+        flex-direction: column;
+    }
+    
+    header .HF-style ul li {
+        margin: 5px 0;
+    }
+
+    .header-options .open-menu{
+        display: block;
+    }
+
+    footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    footer p {
+        max-width: max(290px, 40%);
+        text-align: right;
+        margin: 25px 15px;
+    }
+
+    footer p span {
+        display: none;
+    }
+
+    footer .HF-style {
+        display: none;
+    }
+
+    .home-bg {
+        min-height: 50vh;
+    }
+
+    .bg-content {
+        text-align: center;
+    }
+    
+    .bg-content p {
+        margin-top: 20px;
+    }
+
+    section.agro {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .agro .about-us {
+        background-image: none;
+    }
+
+    .agro .about-us .title-img {
+        width: 90%;
+        margin: 0 auto;
+        background-image: url('../images/agro.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .about-us .title-img h2 {
+        margin-bottom: 10px;
+    }
+
+    .agro .about-us .title-img .text-button {
+        text-align: right;
+    }
+
+    .about-us .base-img {
+        width: 30%;
+    }
+
+    .about-us .base-img .base {
+        height: 130%;
+    }
+
+    .agro .about-us .text {
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .agro .investing-box .box-single {
+        width: 100%;
+    }
+
     .how-its-work img{
         display: none;
     }
     .how-its-work .workflow {
         display: block;
+    }
+
+    .chose-path .path-box {
+        width: 100%;
     }
 }
