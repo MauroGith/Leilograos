@@ -562,24 +562,28 @@ section.come-with-us p {
     margin-bottom: max(15px, 1vw);
 }
 
+.page-init h1 {
+    font-size: max(20px, 1.8vw);
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: max(10px, 1vw);
+}
+
+.page-init span {
+    font-size: max(12px, .8vw);
+}
+
 section.faq {
     max-width: max(720px, 60vw);
     margin: max(30px, 3vw) auto;
 }
 
-.faq .faq-title {
+.faq .page-init{
     text-align: center;
     margin-bottom: max(10px, 1vw);
 }
 
-.faq .faq-title h1 {
+.faq .page-init h1 {
     font-size: max(20px, 2.8vw);
-    font-family: 'Quicksand', sans-serif;
-    margin-bottom: max(10px, 1vw);
-}
-
-.faq .faq-title span {
-    font-size: max(12px, .8vw);
 }
 
 .faq .question-box {
