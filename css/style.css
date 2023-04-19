@@ -49,20 +49,16 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: max(800px, 90%);
+    min-height: 80px;
     margin: 0 auto;
     padding: max(10px, 1vw);
 }
 
 .logo {
-    background-image: url('../images/logo.svg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: max(180px, 25%);
-    height: max(70px, 2vw);
+    width: 25%;
 }
 
-.HF-style ul {
+.HF-style nav ul {
     display: flex;
     list-style: none;
 }
@@ -73,7 +69,7 @@ header {
     color: white;
     font-size: max(15px, 1vw);
     font-weight: lighter;
-    padding: 0 max(10px, 1vw);
+    padding: 0 max(5px, .8vw);
 }
 
 .header-options {
@@ -81,11 +77,116 @@ header {
     align-items: center;
 }
 
+.header-options .user-options {
+    display: flex;
+    align-items: center;
+}
+
+.header-options .user-options i {
+    color: white;
+}
+
+.user-options .notifications {
+    display: flex;
+}
+
+.user-options .notification-box {
+    margin-right: max(10px, 1.5vw);
+    cursor: pointer;
+    position: relative;
+}
+
+.user-options .notification-box .icon-wrapper{
+    position: relative;
+    width: max(35px, 2vw);
+}
+
+.user-options .notification-box .toggle-items ul {
+    min-width: max(260px, 10vw);
+}
+
+.user-options .notifications i {
+    font-size: max(25px, 1.5vw);
+}
+
+.user-options .notifications span {
+    position: absolute;
+    top: -40%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: max(10px, .6vw);
+    background-color: #FCDB5A;
+    height: max(24px, 1vw);
+    width: max(24px, 1vw);
+    border-radius: 50%;
+}
+
+.user-options .user-menu .menu-content{
+    display: flex;
+    align-items: center;
+}
+
+.user-menu .menu-content a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: max(11px, .9vw);
+}
+
+.user-menu .menu-content img {
+    width: max(32px, 1.7vw);
+    height: max(32px, 1.7vw);
+    border-radius: 50%;
+    margin: 0 max(5px, .3vw);
+}
+
+.user-menu .menu-content i {
+    cursor: pointer;
+    font-size: max(20px, 1vw);
+}
+
+.toggle-items {
+    position: relative;
+}
+
+.toggle-items ul {
+    padding: max(8px, .8vw);
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    margin-top: max(10px, 1vw);
+    width: 100%;
+    background-color: white;
+    border-radius: 0 max(5px, .5vw) max(5px, .5vw) max(5px, .5vw);
+    box-shadow: max(1px, .1vw) max(1px, .1vw) max(10px, .5vw) rgba(0, 0, 0, 0.4);
+}
+
+.toggle-items ul li {
+    font-size: max(14px, .8vw);
+    padding: max(5px, .3vw);
+    margin: max(5px, .3vw) 0;
+    border-bottom: max(1px, .1vw) solid #ccc;
+    cursor: pointer;
+}
+
+.user-menu .toggle-items ul li i {
+    color: black;
+}
+
+.header-options .enter {
+    display: none;
+}
+
 .header-options .open-menu {
     display: none;
     color: white;
     font-size: max(25px, 1.5vw);
-    padding: 0 max(15px, 1vw);
+    padding: 0 max(10px, 1vw);
     cursor: pointer;
 }
 
@@ -457,16 +558,19 @@ section.come-with-us p {
 }
 
 @media screen and (max-width: 768px){
-
+    .logo {
+        width: 44%;
+    }
     .header-menu {
         display: none;
         position: absolute;
         width: 100%;
         padding: 10px 0;
         border-top: 2px solid #FCDB5A;
+        border-bottom: 2px solid #FCDB5A;
         background-color: black;
         left: 0;
-        top: 90px;
+        top: 80px;
         z-index: 1;
         text-align: center;
     }
@@ -477,6 +581,10 @@ section.come-with-us p {
     
     header .HF-style ul li {
         margin: 5px 0;
+    }
+
+    .user-options .notifications {
+        display: none;
     }
 
     .header-options .open-menu{
