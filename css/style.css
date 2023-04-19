@@ -60,7 +60,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: max(800px, 90%);
+    max-width: max(800px, 92%);
     min-height: 80px;
     margin: 0 auto;
     padding: max(10px, 1vw);
@@ -572,7 +572,7 @@ section.come-with-us p {
 
 .page-init h1 {
     color: #253D4E;
-    font-size: max(20px, 1.8vw);
+    font-size: max(20px, 2.8vw);
     font-family: 'Quicksand', sans-serif;
     margin-bottom: max(10px, 1vw);
 }
@@ -586,12 +586,92 @@ section.faq {
     margin: max(30px, 3vw) auto;
 }
 
-.faq .page-init {
+section.packs {
+    margin: max(20px, 2vw) 0;
+}
+
+.packs .page-init {
     text-align: center;
 }
 
-.faq .page-init h1 {
-    font-size: max(20px, 2.8vw);
+.packs .packs-cards {
+    max-width: max(1280px, 75vw);
+    margin: 0 auto;
+    padding: max(10px, 1vw) max(10px, 4%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.packs .packs-cards .pack-card {
+    width: 33.3%;
+    padding: 0 max(10px, 2%);
+}
+
+.pack-card .card-content {
+    position: relative;
+    background-color: white;
+    padding: max(10px, 1vw);
+    border-radius: max(5px, .6vw);
+    border: max(1px, .1vw) solid #ccc;
+}
+
+.card-content .pack-type {
+    font-weight: 600;
+    font-size: max(14px, .8vw);
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max(70px, 6vw);
+    height: max(30px, 1.5vw);
+    background-color: #FEF2A4;
+    color: #946800;
+    border-radius: max(3px, .2vw);
+}
+
+.card-content .card-img {
+    margin: max(20px, 1.5vw) 0;
+    text-align: center;
+}
+
+.card-content .card-img img {
+    width: max(60px, 4.3vw);
+    height: max(40px, 3.2vw)
+}
+
+.pack-card .card-content p {
+    font-size: max(15px, 1vw);
+    font-weight: 600;
+    color: #253D4E;
+    margin-bottom: max(12px, 1vw);
+}
+
+.card-content .text-center {
+    margin: max(20px, 2vw) 0;
+    text-align: center;
+}
+
+.card-content .text-center h5 {
+    font-size: max(25px, 2vw);
+    color: #3BB77E;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card-content .text-center span {
+    font-size: max(14px, 1vw);
+    color: gray;
+}
+
+.pack-card .card-content a {
+    font-weight: 600;
+}
+
+.faq .page-init {
+    text-align: center;
 }
 
 .faq .question-box {
