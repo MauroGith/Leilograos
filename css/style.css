@@ -581,9 +581,8 @@ section.come-with-us p {
     font-size: max(13px, .8vw);
 }
 
-section.faq {
-    max-width: max(720px, 60vw);
-    margin: max(30px, 3vw) auto;
+section.ads {
+    margin: max(20px, 2vw) 0;
 }
 
 section.packs {
@@ -670,6 +669,11 @@ section.packs {
 
 .pack-card .card-content a {
     font-weight: 600;
+}
+
+section.faq {
+    max-width: max(720px, 60vw);
+    margin: max(30px, 3vw) auto;
 }
 
 .faq .page-init {
