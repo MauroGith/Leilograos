@@ -9,8 +9,15 @@
     list-style: none;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #F4F4F4;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .default-button {
@@ -195,11 +202,8 @@ header {
     cursor: pointer;
 }
 
-main{
-    min-height: 88vh;
-}
-
 footer {
+    margin-top: auto;
     background-color: #333333;
     padding: max(10px, 1vw);
 }
@@ -562,14 +566,19 @@ section.come-with-us p {
     margin-bottom: max(15px, 1vw);
 }
 
+.page-init {
+    margin-bottom: max(10px, 1vw);
+}
+
 .page-init h1 {
+    color: #253D4E;
     font-size: max(20px, 1.8vw);
     font-family: 'Quicksand', sans-serif;
     margin-bottom: max(10px, 1vw);
 }
 
 .page-init span {
-    font-size: max(12px, .8vw);
+    font-size: max(13px, .8vw);
 }
 
 section.faq {
@@ -577,9 +586,8 @@ section.faq {
     margin: max(30px, 3vw) auto;
 }
 
-.faq .page-init{
+.faq .page-init {
     text-align: center;
-    margin-bottom: max(10px, 1vw);
 }
 
 .faq .page-init h1 {
@@ -614,6 +622,47 @@ section.faq {
 .faq .question-box p {
     font-size: max(15px, .8vw);
     line-height: 1.6;
+}
+
+section.contact {
+    margin: max(20px, 2vw);
+    background-image: url('../images/contact-bg.svg');
+    background-repeat: no-repeat;
+    background-position: 20% 120%;
+    background-size: 40% 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact h1 {
+    font-size: max(25px, 3vw);
+}
+
+.contact .form-wrapper {
+    width: 100%;
+    max-width: max(650px, 40vw);
+}
+
+.contact .form-row {
+    margin: max(10px, 2vw) 0;
+}
+
+.contact .form-row .form-field {
+    width: 90%;
+}
+
+.form-row .form-field input, .form-row .form-field textarea {
+    font-size: max(15px, .8vw);
+    width: 100%;
+    padding: max(10px, 1vw);
+    border-radius: max(6px, .5vw);
+    border: max(1px, .1vw) solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-row .form-field textarea {
+    min-height: max(180px, 8vw);
+    resize: none;
 }
 
 @media screen and (max-width: 768px){
@@ -737,4 +786,21 @@ section.faq {
     .chose-path .path-box {
         width: 100%;
     }
+
+    section.contact {
+        align-items: center;
+        background-image: none;
+    }
+
+    .contact form {
+        background-image: url('../images/contact-bg.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .contact .form-row .form-field {
+        width: 100%;
+    }
+
 }
