@@ -1,6 +1,6 @@
-$('.open-menu').click(() => {
-    $('.open-menu').toggleClass('fa-xmark')
-    $('.open-menu').toggleClass('fa-bars')
+$('.open-menu').click(function() {
+    $(this).toggleClass('fa-xmark')
+    $(this).toggleClass('fa-bars')
     $('.header-menu').slideToggle()
 })
 
@@ -9,4 +9,10 @@ $('.show-items').click(function() {
 })
 $('.icon-wrapper').click(function() {
     $(this).next().find('ul').fadeToggle()
+})
+
+$('.toggle-answer').click(function() {
+    $(this).parent().next().slideToggle()
+    $(this).toggleClass('fa-minus')
+    $(this).toggleClass('fa-plus')
 })

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -6,6 +7,10 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     list-style: none;
+}
+
+body {
+    background-color: #F4F4F4;
 }
 
 .default-button {
@@ -555,6 +560,56 @@ section.come-with-us p {
 .chose-path .path-box img {
     width: max(80px, 5vw);
     margin-bottom: max(15px, 1vw);
+}
+
+section.faq {
+    max-width: max(720px, 60vw);
+    margin: max(30px, 3vw) auto;
+}
+
+.faq .faq-title {
+    text-align: center;
+    margin-bottom: max(10px, 1vw);
+}
+
+.faq .faq-title h1 {
+    font-size: max(20px, 2.8vw);
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: max(10px, 1vw);
+}
+
+.faq .faq-title span {
+    font-size: max(12px, .8vw);
+}
+
+.faq .question-box {
+    background-color: white;
+    padding: max(10px, 1.5vw);
+    margin: max(10px, 1vw) 0;
+}
+
+.faq .question-box .question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq .question-box .answer-box {
+    margin-top: max(15px, 1vw);
+    display: none;
+}
+
+.faq .question-box h4 {
+    font-size: max(16px, 1vw);
+}
+
+.faq .question-box i {
+    font-size: max(18px, 1.2vw);
+    cursor: pointer;
+}
+
+.faq .question-box p {
+    font-size: max(15px, .8vw);
+    line-height: 1.6;
 }
 
 @media screen and (max-width: 768px){
