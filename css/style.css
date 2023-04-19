@@ -600,11 +600,13 @@ section.packs {
     padding: max(10px, 1vw) max(10px, 4%);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .packs .packs-cards .pack-card {
-    width: 33.3%;
+    width: 100%;
+    margin: 10px 0;
+    max-width: max(300px, 33.3%);
     padding: 0 max(10px, 2%);
 }
 
@@ -616,7 +618,7 @@ section.packs {
     border: max(1px, .1vw) solid #ccc;
 }
 
-.card-content .pack-type {
+.card-content .pack-tier {
     font-weight: 600;
     font-size: max(14px, .8vw);
     position: absolute;
