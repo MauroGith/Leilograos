@@ -343,8 +343,8 @@ footer p {
 .data-bg .data .check-box input{
     cursor: pointer;
     appearance: none;
-    width: max(10px, 1vw);
-    height: max(10px, 1vw);
+    width: max(15px, 1vw);
+    height: max(15px, 1vw);
     border-radius: max(1px, .1vw);
     border: max(1px, .1vw) solid #ccc;
     margin-right: max(10px, .4vw);
@@ -358,7 +358,7 @@ footer p {
     border: 0;
     background-image: url('../images/checked.svg');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -1267,6 +1267,20 @@ section.contact {
 
     footer .HF-style {
         display: none;
+    }
+
+    .login-screen .data-bg .bg {
+        display: none;
+    }
+
+    .login-screen .container {
+        min-height: 60vh;
+    }
+
+    .login-screen .data-bg .data {
+        width: 100%;
+        max-width: max(400px, 80%);
+        margin: 0 auto;
     }
 
     .home-bg {
