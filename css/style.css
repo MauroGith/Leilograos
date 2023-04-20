@@ -265,6 +265,103 @@ footer p {
     text-align: center;
 }
 
+.login-screen .container {
+    max-width: max(1280px, 75vw);
+    min-height: 80vh;
+    display: flex;
+}
+
+.login-screen .data-bg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: max(20px, 3vw) 0;
+}
+
+.login .data-bg {
+    align-items: center;
+}
+
+.login-screen .data-bg .bg {
+    border-radius: max(5px, .4vw);
+    min-height: max(48vw, 680px);
+    background-position: center;
+    background-size: cover;
+    width: 48%;
+}
+
+.login-screen .data-bg .data {
+    width: 48%;
+}
+
+.login-screen .data-bg .data-title h1 {
+    font-family: 'QuickSand';
+    color: #253D4E;
+    font-size: max(25px, 2.8vw);
+    margin-bottom: max(8px, .6vw);
+}
+
+.data-bg .data .data-title span {
+    font-size: max(14px, .9vw);
+    color: gray;
+}
+
+.data-bg .data .data-title a {
+    font-size: max(14px, .9vw);
+    text-decoration: none;
+    color: #46A7DF;
+    font-weight: bold;
+}
+
+.data-bg form {
+    width: 100%;
+}
+
+.data-bg .form-row .form-field {
+    width: 100%;
+}
+
+.data-bg .data .d-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: max(20px, 2vw);
+    padding: max(5px, .3vw) 0;
+    font-size: max(15px, .8vw);
+}
+
+.data-bg .data .d-flex a {
+    text-decoration: none;
+    font-weight: 600;
+    color: gray;
+}
+
+.data-bg .data .check-box {
+    display: flex;
+    align-items: center;
+}
+
+.data-bg .data .check-box input{
+    cursor: pointer;
+    appearance: none;
+    width: max(10px, 1vw);
+    height: max(10px, 1vw);
+    border-radius: max(1px, .1vw);
+    border: max(1px, .1vw) solid #ccc;
+    margin-right: max(10px, .4vw);
+}
+
+.data-bg .data .check-box label {
+    cursor: pointer;
+}
+
+.data-bg .data .check-box input:checked {
+    border: 0;
+    background-image: url('../images/checked.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .home-bg {
     min-height: calc(35vw + 5vh);
     padding: max(10px, 1vw);
@@ -1097,7 +1194,7 @@ section.contact {
     max-width: max(650px, 40vw);
 }
 
-.contact .form-row {
+.form-row {
     margin: max(10px, 2vw) 0;
 }
 
@@ -1108,7 +1205,7 @@ section.contact {
 .form-row .form-field input, .form-row .form-field textarea {
     font-size: max(15px, .8vw);
     width: 100%;
-    padding: max(10px, 1vw);
+    padding: max(12px, 1.2vw);
     border-radius: max(6px, .5vw);
     border: max(1px, .1vw) solid #ccc;
     background-color: rgba(255, 255, 255, 0.8);
