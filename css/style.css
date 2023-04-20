@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     list-style: none;
 }
 
@@ -20,11 +21,18 @@ body {
     flex-direction: column;
 }
 
+.container {
+    max-width: max(800px, 92%);
+    margin: 0 auto;
+    padding: max(15px, 1vw);
+}
+
 .default-button {
     background-color: #FCDB5A;
 }
 
 .default-button, .default-button2 {
+    cursor: pointer;
     border: max(2px, .1vw) solid #FCDB5A;
     display: inline-block;
     color: black;
@@ -41,15 +49,57 @@ body {
     justify-content: center;
 }
 
-.homepage-titles{
+.titles{
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: max(25px, 3vw);
     text-transform: uppercase;
     color: #333333;
 }
 
-.homepage-titles span {
-    font-weight: normal;
+.titles span {
+    font-weight: lighter;
+}
+
+.cards-wrapper {
+    margin: max(20px, 2vw) auto;
+    padding: max(10px, 1vw) 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards-wrapper .card {
+    width: 100%;
+    margin: 20px 0;
+    max-width: max(300px, 33.3%);
+    padding: 0 max(10px, 1%);
+}
+
+.card .card-content {
+    position: relative;
+    background-color: white;
+    padding: max(10px, 1.5vw);
+    border-radius: max(5px, .6vw);
+    border: max(1px, .1vw) solid #ccc;
+}
+
+.card-content .card-top {
+    font-weight: 600;
+    font-size: max(14px, .8vw);
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: max(70px, 6vw);
+    padding: max(5px, .2vw);
+    height: max(30px, 1.5vw);
+    background-color: #FEF2A4;
+    color: #946800;
+    border-radius: max(3px, .2vw);
 }
 
 header {
@@ -234,12 +284,9 @@ footer p {
 }
 
 .bg-content h1{
+    color: white;
     font-size: max(25px, 3.6vw);
     text-transform: uppercase;
-}
-
-.bg-content h1 .small {
-    font-weight: lighter;
 }
 
 .bg-content p {
@@ -343,34 +390,33 @@ footer p {
     font-size: max(14px, .8vw);
 }
 
-.products-offered .select-product {
-    margin-bottom: 30px;
+.select-product {
     background-color: #333333;
     width: 100%;
     padding: max(10px, 1vw);
 }
 
-.products-offered .select-product form {
+.select-product form {
     max-width: max(600px, 40%);
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.products-offered .select-product form .form-field {
+.select-product form .form-field {
     display: flex;
     flex-direction: column;
     padding: max(10px, 1vw);
     width: 50%;
 }
 
-.products-offered .select-product form .form-field label {
+.select-product form .form-field label {
     color: white;
     font-size: max(16px, 1vw);
     margin: max(10px, .8vw) 0;
 }
 
-.products-offered .select-product form .form-field select {
+.select-product form .form-field select {
     width: 100%;
     padding: max(10px, .5vw);
     font-size: max(14px, .8vw);
@@ -378,7 +424,8 @@ footer p {
 }
 
 section.agro {
-    padding: 0 max(10px, 2%);
+    padding: max(10px, 2%);
+    background-color: white;
 }
 
 .agro .about-us {
@@ -465,7 +512,7 @@ section.agro {
     margin: max(10px, 1vw) 0;
 }
 .agro .disclosure-box {
-    margin: max(10px, 1vw) 0;
+    margin: max(10px, 1.5vw) 0;
 }
 .agro .disclosure-img {
     max-width: max(600px, 40vw);
@@ -477,7 +524,6 @@ section.agro {
 }
 
 section.how-its-work {
-    margin: max(20px, 3vw) 0;
     padding: max(30px, 3%);
     background-color: #FCDB5A;
 }
@@ -537,7 +583,7 @@ section.how-its-work {
 
 section.come-with-us {
     padding: 0 10px;
-    margin-bottom: max(20px, 4vw);
+    margin: max(20px, 4vw) 0;
     text-align: center;
 }
 
@@ -585,6 +631,125 @@ section.ads {
     margin: max(20px, 2vw) 0;
 }
 
+.ads .text-center {
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: max(20px, 2.5vw);
+}
+
+.ads .text-center p {
+    font-size: max(15px, 1vw);
+    color: #333333;
+}
+
+.ads .text-center a {
+    font-weight: 600;
+    color: black;
+}
+
+.ads .product-list {
+    margin-top: max(10px, 1.5vw);
+}
+
+.ads .product-list h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: max(20px, 2vw);
+    color: #253D4E;
+    margin-bottom: max(10px, 1vw);
+}
+
+.product-list .not-found p{
+    font-size: max(15px, 1vw);
+}
+
+.product-list .card-top {
+    top: -3%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.product-list .have-bids{
+    background-color: #CCEBD7;
+    color: #18794E;
+}
+
+.product-list .card-img img {
+    width: 100%;
+}
+
+.product-list .rating {
+    margin: max(10px, 1vw) 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-list .rating span {
+    color: gray;
+    font-size: max(15px, 1vw);
+}
+
+.stars {
+    margin: 0 max(10px, .8vw);
+    color: gray;
+}
+
+.stars i {
+    font-size: max(13px, .8vw);
+}
+
+.stars .colorful {
+    color: #ffd700;
+}
+
+.product-list .product-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-list .product-info h4 {
+    color: #253D4E;
+    font-family: 'Quicksand', sans-serif;
+    font-size: max(16px, 1.2vw);
+}
+
+.product-list p, .product-list h5 {
+    font-size: max(14px, .9vw);
+    margin: max(5px, .2vw) 0;
+    color: gray;
+}
+
+.product-list .product-info .red p, .product-list .product-info .red h5{
+    color: red;
+}
+
+.product-list .value {
+    display: flex;
+    justify-content: space-between;
+    margin-top: max(15px, 1.2vw);
+}
+
+.product-list .value span {
+    font-size: max(18px, 1.5vw);
+    font-family: 'Quicksand', sans-serif;
+    color: #3BB77E;
+}
+
+.product-list .value .card-buttons a {
+    text-decoration: none;
+}
+
+.product-list .value .card-buttons img {
+    width: max(100px, 10vw);
+    max-width: 100%;
+}
+
+section.ad-details {
+    background-color: white;
+}
+
+/*  */
+
 section.packs {
     margin: max(20px, 2vw) 0;
 }
@@ -593,81 +758,44 @@ section.packs {
     text-align: center;
 }
 
-.packs .packs-cards {
+.packs .cards-wrapper {
     max-width: max(1280px, 75vw);
-    margin: 0 auto;
-    padding: max(10px, 1vw) max(10px, 4%);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-.packs .packs-cards .pack-card {
-    width: 100%;
-    margin: 10px 0;
-    max-width: max(300px, 33.3%);
-    padding: 0 max(10px, 2%);
-}
-
-.pack-card .card-content {
-    position: relative;
-    background-color: white;
-    padding: max(10px, 1vw);
-    border-radius: max(5px, .6vw);
-    border: max(1px, .1vw) solid #ccc;
-}
-
-.card-content .pack-tier {
-    font-weight: 600;
-    font-size: max(14px, .8vw);
-    position: absolute;
-    top: -5%;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: max(70px, 6vw);
-    height: max(30px, 1.5vw);
-    background-color: #FEF2A4;
-    color: #946800;
-    border-radius: max(3px, .2vw);
-}
-
-.card-content .card-img {
+.packs .card-content .card-img {
     margin: max(20px, 1.5vw) 0;
     text-align: center;
 }
 
-.card-content .card-img img {
+.packs .card-content .card-img img {
     width: max(60px, 4.3vw);
     height: max(40px, 3.2vw)
 }
 
-.pack-card .card-content p {
+.packs .card .card-content p {
     font-size: max(15px, 1vw);
     font-weight: 600;
     color: #253D4E;
     margin-bottom: max(12px, 1vw);
 }
 
-.card-content .text-center {
+.packs .card-content .text-center {
     margin: max(20px, 2vw) 0;
     text-align: center;
 }
 
-.card-content .text-center h5 {
+.packs .card-content .text-center h5 {
     font-size: max(25px, 2vw);
     color: #3BB77E;
     font-family: 'Quicksand', sans-serif;
 }
 
-.card-content .text-center span {
+.packs .card-content .text-center span {
     font-size: max(14px, 1vw);
     color: gray;
 }
 
-.pack-card .card-content a {
+.packs .card-content a {
     font-weight: 600;
 }
 
