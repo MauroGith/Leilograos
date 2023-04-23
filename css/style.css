@@ -263,6 +263,11 @@ footer p {
     font-size: max(15px, 1vw);
     font-weight: lighter;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.login-screen .default-button {
+    font-weight: normal;
 }
 
 .login-screen .container {
@@ -273,13 +278,18 @@ footer p {
 
 .login-screen .data-bg {
     width: 100%;
+    align-items: center;
     display: flex;
     justify-content: space-between;
     margin: max(20px, 3vw) 0;
 }
 
-.login .data-bg {
-    align-items: center;
+.registered .data-bg, .forgot-password .data-bg{
+    align-items: initial;
+}
+
+.registered .access {
+    margin: max(20px, 3vw) 0;
 }
 
 .login-screen .data-bg .bg {
@@ -301,7 +311,7 @@ footer p {
     margin-bottom: max(8px, .6vw);
 }
 
-.data-bg .data .data-title span {
+.data-bg .data .data-title span, .data-bg .data .data-title p {
     font-size: max(14px, .9vw);
     color: gray;
 }
@@ -360,6 +370,29 @@ footer p {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.create-account .agree-terms {
+    margin: max(20px, 2vw) 0;
+    font-size: max(15px, 1vw);
+}
+
+.create-account .agree-terms label {
+    color: gray;
+}
+
+.create-account .agree-terms a{
+    display: inline-block;
+    margin-left: max(10px, .5vw);
+}
+
+.login-screen .fgt-pass-img {
+    margin: max(20px, 2vw) 0;
+}
+
+.login-screen .fgt-pass-img img {
+    width: max(70px, 5vw);
+    height: max(70px, 5vw);
 }
 
 .home-bg {
@@ -1278,6 +1311,7 @@ section.contact {
     }
 
     .login-screen .data-bg .data {
+        text-align: center;
         width: 100%;
         max-width: max(400px, 80%);
         margin: 0 auto;
