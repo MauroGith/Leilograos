@@ -92,10 +92,199 @@
                     </ul>
                 </nav>
             </div>
-            <div class="page-init">
-                <h1></h1>
-                <p></p>
-            </div>
+
+
+            <section class="received-bids">
+                <div class="page-init">
+                    <div class="d-flex">
+                        <h1>Lances Recebidos</h1>
+                        <button class="dash-buttons"><i class="fa-solid fa-arrows-rotate"></i> Trocar para Lances Ofertados</button>
+                    </div>
+                    <p>Confira os lances que você recebeu, não se esqueça de aceitar ou negar a proposta.</p>
+                </div>
+
+                <div class="dash-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Data</td>
+                                <td>Produto</td>
+                                <td>Quem deu lance</td>
+                                <td>Valor</td>
+                                <td>Ação</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>03/02/2023 07:50</td>
+                                <td>#2 Grãos - Milho</td>
+                                <td class="user-details">
+                                    <div class="d-flex">
+                                        <img src="./images/user-image.png" alt="">
+                                        <div class="name-rating">
+                                            <span>José Silva</span>
+                                            <div class="d-flex">
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span>(4.0)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>R$ 40,00</td>
+                                <td>
+                                    <button class="dash-buttons green-button"><i class="fa-solid fa-check"></i> Aceitar</button>
+                                    <button class="dash-buttons red-button"><i class="fa-solid fa-ban"></i> Negar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>03/02/2023 07:50</td>
+                                <td>#2 Grãos - Milho</td>
+                                <td class="user-details">
+                                    <div class="d-flex">
+                                        <img src="./images/user-image.png" alt="">
+                                        <div class="name-rating">
+                                            <span>José Silva</span>
+                                            <div class="d-flex">
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span>(4.0)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>R$ 40,00</td>
+                                <td class="approved">Aceita</td>
+                            </tr>
+                            <tr>
+                                <td>03/02/2023 07:50</td>
+                                <td>#2 Grãos - Milho</td>
+                                <td class="user-details">
+                                    <div class="d-flex">
+                                        <img src="./images/user-image.png" alt="">
+                                        <div class="name-rating">
+                                            <span>José Silva</span>
+                                            <div class="d-flex">
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span>(4.0)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>R$ 40,00</td>
+                                <td class="canceled">Cancelada</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="offered-bids">
+                <div class="page-init">
+                    <div class="d-flex">
+                        <h1>Lances Ofertados</h1>
+                        <button class="dash-buttons"><i class="fa-solid fa-arrows-rotate"></i> Trocar para Lances Recebidos</button>
+                    </div>
+                    <p>Confira quais lances ofertados foram aceitos ou negados.</p>
+                </div>
+
+                <div class="dash-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Data</td>
+                                <td>Produto</td>
+                                <td>Vendedor</td>
+                                <td>Valor</td>
+                                <td>Ação</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>03/02/2023 07:50</td>
+                                <td>#2 Grãos - Milho</td>
+                                <td class="user-details">
+                                    <div class="d-flex">
+                                        <img src="./images/user-image.png" alt="">
+                                        <div class="name-rating">
+                                            <span>José Silva</span>
+                                            <div class="d-flex">
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span>(4.0)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>R$ 40,00</td>
+                                <td class="actions">
+                                    <div class="d-flex">
+                                    <span class="canceled">Lance Perdedor</span>
+                                        <div class="buttons">
+                                            <a href="#" class="dash-buttons"><i class="fa-regular fa-message"></i> Chat</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>03/02/2023 07:50</td>
+                                <td>#2 Grãos - Milho</td>
+                                <td class="user-details">
+                                    <div class="d-flex">
+                                        <img src="./images/user-image.png" alt="">
+                                        <div class="name-rating">
+                                            <span>José Silva</span>
+                                            <div class="d-flex">
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span>(4.0)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>R$ 40,00</td>
+                                <td class="actions">
+                                    <div class="d-flex">
+                                    <span class="approved">Aceita</span>
+                                        <div class="buttons">
+                                            <a href="./rateUser.html" class="dash-buttons"><i class="fa-regular fa-star"></i> Qualificar</button>
+                                            <a href="#" class="dash-buttons"><i class="fa-regular fa-message"></i> Chat</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </div>
 
     </main>

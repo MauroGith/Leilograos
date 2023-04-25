@@ -68,74 +68,77 @@
 
     <main>
         <div class="container">
-            <div class="dashboard-buttons">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="./panel.html"><i class="fa-solid fa-gear"></i> Painel</a>
-                        </li>
-                        <li>
-                            <a href="./purchases.html"><i class="fa-solid fa-bag-shopping"></i> Minhas Compras</a>
-                        </li>
-                        <li>
-                            <a href="./userads.html"><i class="fa-solid fa-bullhorn"></i> Meus Anúncios</a>
-                        </li>
-                        <li>
-                            <a href="./bids.html"><i class="fa-solid fa-gavel"></i> Lances</a>
-                        </li>
-                        <li>
-                            <a href="./profile.html" class="selected"><i class="fa-solid fa-user"></i> Meu Perfil</a>
-                        </li>
-                        <li>
-                            <a href="./login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="page-init">
-                <h1>Meu perfil</h1>
-                <p>Edite suas informações pessoais, complete seus dados e troque sua foto.</p>
-            </div>
+            
+            <section class="rate-user">
 
-            <section class="profile">
-                <form action="">
-                    <div class="change-img">
-                        <img src="./images/user-image.png" alt="">
-                        <span>Apagar Foto</span>
-                        <div class="send-photo">
-                            <label for="sendPhoto">Enviar Foto</label>
-                            <input type="file" name="" id="sendPhoto" accept="image/*">
+                <div class="page-init">
+                    <h1>Qualificar Usuário</h1>
+                    <p>Você está qualificando sobre a transação abaixo.</p>
+                </div>
+            
+                <div class="dash-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Data</td>
+                                <td>Produto</td>
+                                <td>Vendedor</td>
+                                <td>Valor</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>03/02/2023 07:50</td>
+                                <td>#2 Grãos - Milho</td>
+                                <td class="user-details">
+                                    <div class="d-flex">
+                                        <img src="./images/user-image.png" alt="">
+                                        <div class="name-rating">
+                                            <span>José Silva</span>
+                                            <div class="d-flex">
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star colorful"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span>(4.0)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>R$ 40,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="rate-box">
+                    <h2>Deixa sua Qualificação</h2>
+                    <p>Escolha a nota de 1 a 5 estrelas, sendo 5 a nota máxima e deixe um comentário público.</p>
+
+                    <form action="">
+                        <div class="form-row d-flex">
+                            <div class="form-field w-25">
+                                <label for="nota">Nota:</label>
+                                <select name="" id="nota">
+                                    <option value="" selected disabled>Escolha a nota...</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                </select>
+                            </div>
+                            <div class="form-field w-70">
+                                <label for="comment">Comentário:</label>
+                                <input type="text" id="comment" placeholder="Digite seu comentário">
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="form-row d-flex">
-                        <div class="form-field w-50">
-                            <label for="userName">Nome Completo:</label>
-                            <input type="text" id="userName" placeholder="User Data">
-                        </div>
-                        <div class="form-field w-50">
-                            <label for="userMail">E-mail:</label>
-                            <input type="email" id="userMail" placeholder="User Data">
-                        </div>
-                    </div>
-                    <div class="form-row d-flex">
-                        <div class="form-field w-50">
-                            <label for="userPassword">Senha:</label>
-                            <input type="password" id="userPassword" placeholder="Preencha se quiser alterar a senha">
-                        </div>
-                        <div class="form-field w-25">
-                            <label for="userCPF">CPF:</label>
-                            <input type="number" id="userCPF" placeholder="User Data">
-                        </div>
-                        <div class="form-field w-25">
-                            <label for="userTel">Telefone:</label>
-                            <input type="tel" id="userTel" placeholder="User Data">
-                        </div>
-                    </div>
-                    <div class="button-wrapper">
-                        <button type="submit" class="default-button">Salvar Perfil</button>
-                    </div>
-                </form>
+                        <button type="submit" class="default-button">Enviar</button>
+                    </form>
+                </div>
             </section>
         </div>
 

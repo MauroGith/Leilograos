@@ -27,6 +27,23 @@ body {
     padding: max(15px, 1vw);
 }
 
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex .w-25 {
+    width: 25%;
+}
+
+.d-flex .w-50 {
+    width: 50%;
+}
+
+.d-flex .w-70 {
+    width: 70%;
+}
+
 .default-button {
     background-color: #FCDB5A;
 }
@@ -332,7 +349,6 @@ footer p {
 }
 
 .data-bg .data .d-flex {
-    display: flex;
     justify-content: space-between;
     margin-bottom: max(20px, 2vw);
     padding: max(5px, .3vw) 0;
@@ -751,6 +767,7 @@ section.come-with-us p {
     font-size: max(25px, 2.8vw);
     font-family: 'Quicksand', sans-serif;
     margin-bottom: max(10px, 1vw);
+    margin-right: max(10px, 1vw);
 }
 
 .page-init p {
@@ -760,6 +777,11 @@ section.come-with-us p {
 
 .page-init span {
     font-size: max(13px, .8vw);
+}
+
+.page-init .d-flex {
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 section.ads {
@@ -1035,7 +1057,6 @@ section.ad-details {
 }
 
 .seller-info .seller-data .name-rating .d-flex {
-    display: flex;
     align-items: center;
 }
 
@@ -1240,10 +1261,19 @@ section.contact {
     width: 90%;
 }
 
-.form-row .form-field input, .form-row .form-field textarea {
-    font-size: max(15px, .8vw);
+.form-row .form-field label {
+    font-weight: 600;
+    font-size: max(15px, 1vw);
+    display: block;
+}
+
+.form-row .form-field input,
+.form-row .form-field textarea,
+.form-row .form-field select {
+    font-size: max(15px, 1vw);
     width: 100%;
     padding: max(12px, 1.2vw);
+    margin: max(5px, .3vw) 0;
     border-radius: max(6px, .5vw);
     border: max(1px, .1vw) solid #ccc;
     background-color: rgba(255, 255, 255, 0.8);
@@ -1317,7 +1347,6 @@ section.contact {
 }
 
 .panel-card .card-content .d-flex{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     margin: max(15px, 1vw) 0;
@@ -1436,7 +1465,7 @@ section.contact {
 
 .dash-table table {
     margin: max(20px, 2vw) 0;
-    width: max(700px, 100%);
+    width: max(800px, 100%);
     border-collapse: collapse;
 }
 
@@ -1463,10 +1492,39 @@ section.contact {
     color: #DD7965;
 }
 
+.dash-table .user-details img {
+    width: max(80px, 5.3vw);
+    height: max(80px, 5.3vw);
+    border-radius: 50%;
+}
+
+.dash-table .user-details .name-rating {
+    margin-left: max(10px, 1vw);
+}
+
+.dash-table .user-details .stars {
+    margin: 0;
+    margin-right: max(10px, 1vw);
+}
+
+.dash-table .user-details .d-flex {
+    align-items: center;
+}
+
+.dash-table .actions .d-flex {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
  .dash-buttons {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
     font-weight: 600;
     cursor: pointer;
-    border: max(2px, .1vw) solid;
+    border: max(1px, .1vw) solid black;
+    color: black;
     border-radius: max(5px, .5vw);
     font-size: max(15px, 1vw);
     padding: max(5px, .5vw) max(8px, .8vw);
@@ -1493,6 +1551,79 @@ section.contact {
 
 .user-ads .card-buttons {
     display: flex;
+}
+
+section.rate-user {
+    margin: max(15px, 2vw) 0;
+    max-width: max(800px, 60vw);
+}
+
+.rate-user form .d-flex {
+    justify-content: space-between;
+}
+
+.rate-user .rate-box {
+    margin-top: max(15px, 1vw);
+}
+
+.rate-user .rate-box h2 {
+    font-size: max(20px, 2vw);
+    color: #253D4E;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.rate-user .rate-box p {
+    margin-top: max(10px, 1vw);
+    font-size: max(15px, 1vw);
+    color: gray;
+}
+
+.rate-user form .default-button {
+    font-weight: bold;
+}
+
+section.profile {
+    margin: max(20px, 1.5vw) 0;
+}
+
+section.profile form {
+    background-color: white;
+    padding: max(10px, 1vw);
+    border-radius: max(10px, 1vw);
+}
+
+section.profile .change-img input {
+    display: none;
+}
+
+section.profile .change-img {
+    display: flex;
+    align-items: center;
+}
+
+section.profile .change-img img{
+    width: max(80px, 5.3vw);
+    height: max(80px, 5.3vw);
+    border-radius: 50%;
+    margin: max(10px, 1vw);
+    margin-left: 0;
+}
+
+section.profile .change-img label, section.profile .change-img span {
+    display: inline-block;
+    margin: max(10px, 1vw);
+    font-size: max(15px, 1vw);
+    text-decoration: underline;
+    color: gray;
+    cursor: pointer;
+}
+
+section.profile form .d-flex {
+    justify-content: space-between;
+}
+
+section.profile form .form-field {
+    padding-right: max(1px, 1.5vw);
 }
 
 /* DASHBOARD */
@@ -1563,6 +1694,18 @@ section.contact {
         width: 100%;
         max-width: max(400px, 80%);
         margin: 0 auto;
+    }
+
+    .d-flex .w-25 {
+        width: 50%;
+    }
+    
+    .d-flex .w-50 {
+        width: 100%;
+    }
+    
+    .d-flex .w-70 {
+        width: 100%;
     }
 
     .home-bg {
@@ -1680,8 +1823,13 @@ section.contact {
         width: 100%;
     }
 
-    .dashboard-buttons ul {
-        justify-content: initial;
+    .dashboard-buttons ul li {
+        width: 100%;
+    }
+
+    .dashboard-buttons ul li a {
+        width: 100%;
+        text-align: center;
     }
     
     .ads-list .item-box {
