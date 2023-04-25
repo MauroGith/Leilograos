@@ -748,9 +748,14 @@ section.come-with-us p {
 
 .page-init h1 {
     color: #253D4E;
-    font-size: max(20px, 2.8vw);
+    font-size: max(25px, 2.8vw);
     font-family: 'Quicksand', sans-serif;
     margin-bottom: max(10px, 1vw);
+}
+
+.page-init p {
+    font-size: max(15px, 1vw);
+    color: gray;
 }
 
 .page-init span {
@@ -1249,6 +1254,249 @@ section.contact {
     resize: none;
 }
 
+/* DASHBOARD */
+
+.dashboard-buttons {
+    margin: max(10px, 1.5vw) 0;
+}
+
+.dashboard-buttons ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dashboard-buttons ul li {
+    margin:0 max(5px, .5vw);
+    margin-bottom: max(10px, .5vw);
+}
+
+.dashboard-buttons ul .selected {
+    color: black;
+    font-weight: 700;
+    background-color: #FCDB5A;
+    border: 0;
+}
+
+.dashboard-buttons ul a {
+    font-size: max(16px, 1vw);
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    color: gray;
+    padding: max(15px, 1vw);
+    background-color: white;
+    border: max(1px, .1vw) solid #ccc;
+    border-radius: max(10px, 1vw);
+}
+
+.dashboard-buttons ul a i {
+    font-size: max(20px, 1.2vw);
+    margin-right: max(5px, .3vw);
+}
+
+.panel .panel-cards {
+    margin: max(20px, 1.5vw) 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.panel .panel-card {
+    width: 100%;
+    max-width: max(250px, 32%);
+    margin: 15px auto;
+    text-decoration: none;
+    padding: max(15px, 1vw);
+    padding-bottom: 0;
+    background-color: white;
+    border-radius: max(10px, 1vw);
+}
+
+.panel .panel-card .card-content {
+    padding-bottom: max(30px, 1vw);
+}
+
+.panel-card .card-content .d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: max(15px, 1vw) 0;
+}
+
+.panel-card .card-content span {
+    font-size: max(20px, 2.5vw);
+    font-weight: bold;
+}
+
+.panel-card .card-content i {
+    font-size: max(16px, 1.8vw);
+    padding: max(10px, 1vw);
+    border-radius: max(5px, .5vw);
+}
+
+.panel-card .card-content p {
+    font-size: max(18px, 1vw);
+}
+
+.green-card .card-content {
+    border-bottom: max(2px, .2vw) solid #2bc155;
+}
+
+.green-card .card-content .d-flex{
+    color: #2bc155;
+}
+
+.green-card .card-content .d-flex i {
+    background-color: rgba(43, 193, 86, 0.1);
+}
+
+.blue-card .card-content {
+    border-bottom: max(2px, .2vw) solid #3f9ae0;
+}
+
+.blue-card .card-content .d-flex{
+    color: #3f9ae0;
+}
+
+.blue-card .card-content .d-flex i {
+    background-color: rgba(63, 154, 224, 0.1);
+}
+
+.orange-card .card-content {
+    border-bottom: max(2px, .2vw) solid #ff9b52;
+}
+
+.orange-card .card-content .d-flex{
+    color: #ff9b52;
+}
+
+.orange-card .card-content .d-flex i {
+    background-color: rgba(255, 154, 82, 0.1);
+}
+
+.panel .ads-list h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: max(25px, 2vw);
+    color: #253D4E;
+    margin-bottom: max(15px, 1.5vw);
+}
+
+.panel .ads-list ul li {
+    margin: max(15px, 1.2vw) 0;
+}
+
+.ads-list .item-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: max(15px, 1.5vw);
+    border-radius: max(10px, 1vw);
+    background-color: white;
+}
+
+.ads-list .item-box .d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.ads-list .item-box .item-details img{
+    width: max(80px, 7vw);
+    height: max(80px, 7vw);
+    border-radius: max(5px, .3vw);
+}
+
+.ads-list .item-box .item-details h5 {
+    font-size: max(25px, 1.5vw);
+}
+
+.ads-list .item-box .text-content {
+    margin: max(10px, 1vw);
+}
+
+.ads-list .item-box  p {
+    font-size: max(16px, 1vw);
+    margin-top: max(10px, 1vw);
+    color: gray;
+}
+
+.ads-list .item-box .last-bid img {
+    width: max(50px, 4vw);
+    height: max(50px, 4vw);
+}
+
+.ads-list .item-box span {
+    font-size: max(20px, 1.3vw);
+    font-weight: 600;
+}
+
+.dash-table {
+    overflow: auto;
+}
+
+.dash-table table {
+    margin: max(20px, 2vw) 0;
+    width: max(700px, 100%);
+    border-collapse: collapse;
+}
+
+.dash-table table thead {
+    background-color: #ededed;
+    color: gray;
+}
+
+.dash-table table td {
+    padding: max(10px, 1vw);
+    font-size: max(15px, 1vw);
+}
+
+.dash-table table tbody td {
+    border-bottom: max(1px, .1vw) solid #ccc;
+    height: max(80px, 5vw);
+}
+
+.dash-table .approved {
+    color: #67A98A;
+}
+
+.dash-table .canceled {
+    color: #DD7965;
+}
+
+ .dash-buttons {
+    font-weight: 600;
+    cursor: pointer;
+    border: max(2px, .1vw) solid;
+    border-radius: max(5px, .5vw);
+    font-size: max(15px, 1vw);
+    padding: max(5px, .5vw) max(8px, .8vw);
+    margin: max(5px, .5vw);
+    margin-left: 0;
+}
+
+.dash-buttons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ .green-button {
+    color: #67A98A;
+    border-color: #67A98A;
+    background-color: rgba(103, 169, 138, 0.1);
+}
+
+ .red-button {
+    color: #DD7965;
+    border-color: #DD7965;
+    background-color: rgba(221, 121, 101, 0.1);
+}
+
+.user-ads .card-buttons {
+    display: flex;
+}
+
+/* DASHBOARD */
+
 @media screen and (max-width: 768px){
     .logo {
         width: 44%;
@@ -1420,8 +1668,32 @@ section.contact {
         background-position: center;
     }
 
+    .panel .page-init {
+        text-align: center;
+    }
+
+    .panel .ads-list h4 {
+        text-align: center;
+    }
+
     .contact .form-row .form-field {
         width: 100%;
     }
 
+    .dashboard-buttons ul {
+        justify-content: initial;
+    }
+    
+    .ads-list .item-box {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .ads-list .item-box .d-flex {
+        flex-direction: column;
+        text-align: center;
+        margin: 15px 0;
+    }
 }
