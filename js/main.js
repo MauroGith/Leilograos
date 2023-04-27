@@ -11,8 +11,8 @@ $('.icon-wrapper').click(function() {
     $(this).next().find('ul').fadeToggle()
 })
 
-$('.toggle-answer').click(function() {
-    $(this).parent().next().slideToggle()
-    $(this).toggleClass('fa-minus')
-    $(this).toggleClass('fa-plus')
+$('.question').click(function() {
+    $(this).next().slideToggle()
+    $(this).find('i').toggleClass('fa-minus')
+    $(this).find('i').toggleClass('fa-plus')
 })

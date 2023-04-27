@@ -1211,6 +1211,7 @@ section.faq {
 }
 
 .faq .question-box .question {
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
 }
