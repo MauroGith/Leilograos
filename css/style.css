@@ -1379,6 +1379,18 @@ section.contact {
     background-color: rgba(43, 193, 86, 0.1);
 }
 
+.cyan-card .card-content {
+    border-bottom: max(2px, .2vw) solid #12A594;
+}
+
+.cyan-card .card-content .d-flex{
+    color: #12A594;
+}
+
+.cyan-card .card-content .d-flex i {
+    background-color: rgba(18, 165, 148, 0.1);
+}
+
 .blue-card .card-content {
     border-bottom: max(2px, .2vw) solid #3f9ae0;
 }
@@ -1389,6 +1401,18 @@ section.contact {
 
 .blue-card .card-content .d-flex i {
     background-color: rgba(63, 154, 224, 0.1);
+}
+
+.darkblue-card .card-content {
+    border-bottom: max(2px, .2vw) solid #0000ff;
+}
+
+.darkblue-card .card-content .d-flex{
+    color: #0000ff;
+}
+
+.darkblue-card .card-content .d-flex i {
+    background-color: rgba(0, 0, 255, 0.1);
 }
 
 .orange-card .card-content {
@@ -1410,7 +1434,7 @@ section.contact {
     margin-bottom: max(15px, 1.5vw);
 }
 
-.panel .ads-list ul li {
+.ads-list ul li {
     margin: max(15px, 1.2vw) 0;
 }
 
@@ -1457,6 +1481,11 @@ section.contact {
 .ads-list .item-box span {
     font-size: max(20px, 1.3vw);
     font-weight: 600;
+}
+
+.ads-list .admin-buttons {
+    max-width: max(280px, 20%);
+    text-align: center;
 }
 
 .dash-table {
@@ -1517,7 +1546,11 @@ section.contact {
     flex-wrap: wrap;
 }
 
- .dash-buttons {
+.dash-table .delete-item {
+    cursor: pointer;
+}
+
+.dash-buttons {
     display: inline-block;
     text-decoration: none;
     background-color: white;
@@ -1537,16 +1570,22 @@ section.contact {
     color: inherit;
 }
 
- .green-button {
+.green-button {
     color: #67A98A;
     border-color: #67A98A;
     background-color: rgba(103, 169, 138, 0.1);
 }
 
- .red-button {
+.red-button {
     color: #DD7965;
     border-color: #DD7965;
     background-color: rgba(221, 121, 101, 0.1);
+}
+
+.blue-button {
+    color: #3F9AE0;
+    border-color: #3F9AE0;
+    background-color: rgba(63, 154, 224, 0.1);
 }
 
 .user-ads .card-buttons {
